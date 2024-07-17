@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Transporte</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .logo-container img {
+            width: 240px;
+            height: 60px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 1rem;
+        }
+        .header, .section, .cta {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #007BFF;
+            color: #fff;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .cta {
+            text-align: center;
+            background-color: #28a745;
+            color: #fff;
+        }
+        .cta a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            background-color: #007BFF;
+        }
+        section {
+            margin: 2rem 0;
+            color: #030303;
+        }
+        #quote {
+            background: linear-gradient(135deg, #007BFF 0%, #00C6FF 100%);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        #quote h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        #quoteForm {
+            display: flex;
+            flex-direction: column;
+        }
+        #quoteForm label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        #quoteForm input {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        #quoteForm input:focus {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        #quoteForm button {
+            padding: 10px;
+            background: #00C6FF;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        #quoteForm button:hover {
+            background: #007BFF;
+            transform: scale(1.05);
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.1rem;
+            position: static;
+            width: 100%;
+            bottom: 0;
+        }
+        .email-link {
+            display: inline-block;
+            margin-top: 0.1rem;
+            padding: 0.75rem 1.5rem;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: 0.8s ease;
+        }
+        .email-link:hover {
+            background-color: #559dbe;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <img src="logotipo.png" alt="Logotipo da Empresa">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#quote">Cotação de Frete</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="header">
+            <h1>Serviços de Transporte com Motos</h1>
+            <p>Agilidade, Segurança e Confiabilidade ao seu alcance</p>
+        </div>
+        <div class="section">
+            <h2>Tipos de Serviço</h2>
+            <ul>
+                <li><strong>Entrega de Documentos:</strong> Contratos, faturas, correspondências corporativas, documentos legais.</li>
+                <li><strong>Entrega de Peças e Componentes:</strong> Peças automotivas, componentes eletrônicos, peças de máquinas.</li>
+                <li><strong>Entrega de Materiais de Escritório:</strong> Papel, canetas, toners, equipamentos de escritório.</li>
+                <li><strong>Entrega de Medicamentos:</strong> Medicamentos prescritos, produtos farmacêuticos, suprimentos médicos.</li>
+                <li><strong>Entrega de Alimentos e Bebidas:</strong> Produtos de supermercados, refeições prontas, bebidas.</li>
+                <li><strong>Entrega de Produtos de E-commerce:</strong> Roupas, eletrônicos, acessórios, produtos diversos adquiridos online.</li>
+                <li><strong>Serviço de Coleta e Entrega:</strong> Coleta de documentos ou produtos em um local para entrega em outro.</li>
+                <li><strong>Entrega de Presentes e Encomendas:</strong> Presentes personalizados, cestas de presente, flores.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Materiais, Documentos e Peças</h2>
+            <ul>
+                <li><strong>Materiais:</strong> Papel, plástico, vidro, metais leves. Embalagens resistentes, envelopes, caixas de diversos tamanhos.</li>
+                <li><strong>Documentos:</strong> Documentos confidenciais e sensíveis. Certificados, registros, contratos.</li>
+                <li><strong>Peças:</strong> Peças de reposição para máquinas. Componentes eletrônicos, baterias, equipamentos leves.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Por que escolher nossos serviços?</h2>
+            <ul>
+                <li><strong>Rapidez e Eficiência:</strong> Utilizando motos, garantimos entregas ágeis, especialmente em áreas urbanas com trânsito intenso. Nossos motoboys são treinados para escolher as melhores rotas, assegurando que seus documentos, peças e materiais cheguem ao destino no menor tempo possível.</li>
+                <li><strong>Segurança e Confiabilidade:</strong> Entendemos a importância dos itens que nos confia. Utilizamos embalagens seguras e rastreamento em tempo real para garantir que cada entrega seja feita com a máxima segurança.</li>
+                <li><strong>Flexibilidade de Serviços:</strong> Seja para a entrega de documentos urgentes, peças essenciais para a manutenção de seus equipamentos, ou até mesmo a entrega de presentes especiais, estamos preparados para atender a todas as suas necessidades de transporte.</li>
+                <li><strong>Custo-Benefício:</strong> Nossos serviços são oferecidos a preços competitivos, proporcionando uma excelente relação custo-benefício. Acreditamos que a qualidade do serviço não deve comprometer o orçamento de sua empresa.</li>
+            </ul>
+        </div>
+        <div class="cta">
+            <h2>Entre em contato conosco!</h2>
+            <p>Otimize suas entregas e torne seus processos logísticos mais eficazes.</p>
+            <a href="mailto:contato@empresa.com">Contate-nos</a>
+        </div>
+    </div>
+    <section id="quote">
+        <h2>Cotação de Frete</h2>
+        <form id="quoteForm" onsubmit="return validateForm()">
+            <label for="distance">Distância (km):</label>
+            <input type="number" id="distance" name="distance" min="1" max="200" required>
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" name="weight" min="1" max="40" required>
+            <button type="button" onclick="calculateQuote()">Calcular Cotação</button>
+        </form>
+        <p id="result"></p>
+        <p id="error-message" style="color: rgb(161, 25, 25);"></p>
+    </section>
+    <section id="contact">
+        <h2>Contato</h2>
+        <h4>WhatsApp: <a href="https://wa.me/5511970155712" target="_blank" class="email-link">(11) 97015-5712</a></h4>
+        <h4>E-mail: <a href="mailto:matheusbano.mh@gmail.com" id="vccold" class="email-link">matheusbano.mh@gmail.com</a></h4>
+    </section>
+</main>
+<footer>
+    <div class="footer-content">
+        <img src="logotipo.png" alt="Logotipo da Empresa">
+        <p>CNPJ: 55.911.866/0001-46.</p>
+        <p><strong>Regiões disponíveis:</strong> Cabreúva, Jundiaí, Itupeva, Cajamar, Itu, Salto, Indaiatuba, Campinas, Sorocaba, Valinhos, Vinhedo, Louveira.</p>
+        <p>&copy; 2024 BanoXpress. Todos os direitos reservados.</p>
+    </div>
+</footer>
+<script src="scripts.js"></script>
+<script>
+    function validateForm() {
+        const distance = document.getElementById('distance').value;
+        const weight = document.getElementById('weight').value;
+        const errorMessage = document.getElementById('error-message');
+
+        if (distance < 1 || distance > 200) {
+            errorMessage.textContent = 'A distância deve estar entre 1 e 200 km.';
+            return false;
+        }
+
+        if (weight < 1 || weight > 40) {
+            errorMessage.textContent = 'O peso deve estar entre 1 e 40 kg.';
+            return false;
+        }
+
+        errorMessage.textContent = '';
+        return true;
+    }
+
+    function calculateQuote() {
+        if (!validateForm()) {
+            return;
+        }
+
+        const distance = document.getElementById('distance').value;
+        const weight = document.getElementById('weight').value;
+        const result = document.getElementById('result');
+
+        if (distance && weight) {
+            const quote = (distance * 1.78) + (weight * 0.9);
+            result.textContent = `O valor estimado do frete é R$${quote.toFixed(2)}`;
+        } else {
+            result.textContent = 'Por favor, preencha todos os campos.';
+        }
+    }
+</script>
+</body>
+</html>
