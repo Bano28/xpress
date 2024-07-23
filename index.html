@@ -282,7 +282,7 @@
         const result = document.getElementById('result');
 
         if (distance && weight) {
-            const quote = (distance * 1.78) + (weight * 0.9);
+            const quote = (distance * 2.5) + (weight * 1);
             result.textContent = `O valor estimado do frete é R$${quote.toFixed(2)}`;
         } else {
             result.textContent = 'Por favor, preencha todos os campos.';
